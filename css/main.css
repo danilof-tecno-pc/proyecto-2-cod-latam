@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Black;         
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #ececec;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+/*Menu*/
+
+body {
+	
+    background-image: url("..//img/fondo.png");
+	
+	background-size: cover;
+	background-attachment: fixed;
+	
+	font-family: 'Arial Black';
+
+	/*claro prueva*/
+
+	background-color: #f2f2f2;
+    color: #252525;
+    transition: 0.5s ease-in-out;
+	
+
+    
+
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+
+	background-color: rgb(159, 162, 163);
+
+}
+
+/*claro oscuro prueva*/
+
+.small-txt {
+    margin: 20px 0;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #434343;
+    appearance: none;    
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+} 
+
+input[type="checkbox"]:checked {
+    background-color: #0863ca;
+}
+
+input[type="checkbox"]::before {
+     content: '';
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     background-color: #f2f2f2;
+     border-radius: 50%;
+     top: 2px;
+     left: 2px;
+     transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.dark-mode {
+    background-color: #252525;
+    color: #f2f2f2;
+}
+/*claro*/
+
+.fixed{position:fixed; top:0}
+
+
+ /* Bordes*/
+ p {
+	font-size: 25px;
+
+	line-height: 1.5;
+	border-color: rgb(8, 99, 218);
+	border-width: 10px;
+	border-style: groove;
+	border-radius: 45px;
+	width: 70%;
+	height: 5%;  
+	padding: 5%;
+
+
+  }
+  
+  .content-box {
+	box-sizing: content-box;
+	
+  }
+  
+  .border-box {
+	box-sizing: border-box;
+	
+  }
+
+  
+  /* Bordes*/
+
+
+
+
+
+.foto-danilo{
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+    width: 70%; 
+    border-radius: 50%;
+    height: auto;
+	margin-top: 30px;
+	  
+	
+}
+
+
+
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  
+  }
+  .iconos a{
+     font-size: 40px;
+     transition: all ease 300ms;
+    
+  
+  }
+  
+  .iconos a:hover{
+    color: red;
+    transform: scale(1.2);
+  }
+  .facebook{
+  color: blue;
+  }
+  
+  .instagram{
+  color: brown;
+  
+  }
+  
+  .linkedin{
+  color: rgb(73, 73, 243);
+  
+  }
+  
+  .github{
+  color: black;
+  
+  }
+
+
+
+.boton{
+
+    display: inline-block;
+    background-color: rgb(177, 170, 171);
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    padding: 13px 25px;
+    margin-top: 25px;
+    border-radius: 45px;
+
+
+}
+
+.boton:hover{
+
+background-color: rgb(243, 57, 57);
+
+}
+
+@media screen and (max-width:800px) {
+    .derecha{
+      width: 100%;
+    }
+    .isquierda{
+      width: 100%;
+    }
+    
+  } 
+  
+  @media screen and (max-width:400px) {
+    .container{
+    width: 100%;
+  
+    }
+  }
+
+
+  html {
+    scroll-behavior:smooth;
+  }
+
+  h4{
+
+    font-family: Brush Script MT;
+    font-size: 150%;
+
+}
+  
